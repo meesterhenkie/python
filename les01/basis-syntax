@@ -1,0 +1,21 @@
+print("Hello World")
+print("Dit is mijn eerste code")
+# dit is een commentaarregel
+# een commentaarregelwordt niet uitgevoerd in de compiler
+# een commentaarregel toont extra informatie om een regel te beschrijven
+# een compiler vertaalt en voert extructies uit
+print()
+# de functie print() genereert een regel
+print('Dit is mijn tweede rij code, deze Python werkt zowel met single of double quotes')
+# Python werkt met statements
+# Statements bestaan uit functions en arguments
+# Een function is een verzameling van programmeerinstructies die ene bepaalde taak uitvoeren
+print ("ik bereken het getal 3 te vermenigvuldigen met 9")
+print("3*9")
+print("een berekening plaats je nooit tussen quotes")
+print(3*9)
+print("mijn favoriete nummer zijn 27 en dat zal zo blijven")
+print("mijn favoriete nummer zijn",3*9, "en dat zal zo blijven")
+print("let op met spaties",3*9, "een berekening zet automatisch een spatie ",2*9, "als je goed kijkt, dan staan in deze regel nu 2 spaties!")
+print ("er is een verschil tussen hoofdletters en kleine letters")
+print ("Er is een verschil tussen Hoofdletters en Kleine Letters")
