@@ -1,0 +1,119 @@
+WERKEN met variabelen
+INPUT van variabele gegevens via functie input
+
+first =input("Schrijf hier je naam: ")
+second =input("Schrijf hier je voornaam: ")
+
+initialen= first[0] + "&" + second[0]
+print(initialen)
+-------------------------------
+first =input("Schrijf hier je naam: ")
+second =input("Schrijf hier je voornaam: ")
+
+initialen= first[1] + "&" + second[1]
+print(initialen) 
+---------------------------------
+first =input("Schrijf hier je naam: ")
+second =input("Schrijf hier je voornaam: ")
+
+initialen= first[0] + "&" + second[0]
+print (initialen.upper())
+-----------------------------------
+first =input("Schrijf hier je naam: ")
+second =input("Schrijf hier je voornaam: ")
+
+initialen= first[0] + "&" + second[0]
+print()
+print(initialen)
+print(initialen.upper())
+print()
+print(first.lower())
+print(second.lower())
+------------------------------------------
+REKENEN met variabelen
+#Input van getallen = string = letter
+#float = omzetten van letters/string naar integer (int)
+
+inhoud = input("inhoud in liter: ")
+aantal = input("aantal flessen: ")
+
+nbrInhoud = float(inhoud)
+nbrAantal = float(aantal)
+
+totaal = int(nbrInhoud * nbrAantal)
+
+print()
+print(totaal)
+-------------------------------------------
+#Print "liter" plaatsen na het totaalresultaat
+
+inhoud = input("inhoud in liter: ")
+aantal = input("aantal flessen: ")
+
+nbrInhoud = float(inhoud)
+nbrAantal = float(aantal)
+
+totaal = float(nbrInhoud * nbrAantal)
+
+print()
+print(totaal, "liter")
+------------------------------------------
+OEFENING: bereken statiegeld op flesjes
+#groot = 0.15
+#klein = 0.10
+
+PrijsGroot = 0.15
+PrijsKlein = 0.10
+AantalGroot = input("aantal grote flessen: ")
+AantalKlein = input("aantal kleine flessen: ")
+
+nbrAantalGroot = float(AantalGroot)
+nbrAantalKlein = float(AantalKlein)
+
+TotaalGroot = float(nbrAantalGroot * PrijsGroot)
+TotaalKlein = float(nbrAantalKlein * PrijsKlein)
+
+print("Totaal grote flessen: ",TotaalGroot, "Euro")
+print("Totaal kleine flessen: ",TotaalKlein, "Euro")
+
+TotaalEinde = TotaalGroot + TotaalKlein
+print("Eindtotaal: ",TotaalEinde, "Euro")
+---------------------------------------------------
+OEFENING: verkorte versie - bereken statiegeld op flesjes
+#groot = 0.15
+#klein = 0.10
+
+PrijsGroot = 0.15
+PrijsKlein = 0.10
+AantalGroot = int(input("aantal grote flessen: "))
+AantalKlein = int(input("aantal kleine flessen: "))
+
+TotaalGroot = float(AantalGroot * PrijsGroot)
+TotaalKlein = float(AantalKlein * PrijsKlein)
+
+print("Totaal grote flessen: ",TotaalGroot, "Euro")
+print("Totaal kleine flessen: ",TotaalKlein, "Euro")
+
+TotaalEinde = TotaalGroot + TotaalKlein
+print("Eindtotaal: ",TotaalEinde, "Euro")
+---------------------------------------------------
+OEFENING: Afrondingen bereken statiegeld op flesjes
+
+#groot = 0.15
+#klein = 0.10
+# bij output: vorm de code %8.2 f voor de variabele en sluit de string af met dubbel quote, bvb: "Afrekening kleine flesjes: %8.2f" % TotaalKlein
+
+PrijsGroot = 0.15
+PrijsKlein = 0.10
+AantalGroot = int(input("aantal grote flessen: "))
+AantalKlein = int(input("aantal kleine flessen: "))
+
+TotaalGroot = float(AantalGroot * PrijsGroot)
+TotaalKlein = float(AantalKlein * PrijsKlein)
+
+print("Totaal grote flessen: %8.2f" % TotaalGroot, "Euro")
+print("Totaal kleine flessen: %8.2f" % TotaalKlein, "Euro")
+
+TotaalEinde = TotaalGroot + TotaalKlein
+print("Eindtotaal: %8.2f" % TotaalEinde, "Euro")
+---------------------------------------------------
